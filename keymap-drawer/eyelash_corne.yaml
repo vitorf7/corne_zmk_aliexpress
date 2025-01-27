@@ -62,7 +62,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
   - SYMBOL
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-option$$
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
