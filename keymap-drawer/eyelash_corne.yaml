@@ -44,8 +44,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - NUMBER
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
   - SYMBOL
   - $$mdi:apple-keyboard-option$$
   NUMBER:
@@ -129,8 +129,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -142,12 +142,12 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - '&studio_unlock'
+  - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
   - F3
@@ -155,9 +155,9 @@ layers:
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
-  - F7
-  - F8
-  - F9
+  - {t: PREVIOUS, h: F7}
+  - {t: PLAY PAUSE, h: F8}
+  - {t: NEXT, h: F9}
   - F10
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
@@ -169,24 +169,24 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - PRINTSCREEN
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - SCROLLLOCK
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
