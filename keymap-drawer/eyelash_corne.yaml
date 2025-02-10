@@ -43,10 +43,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '-', s: _}
   - LGUI
-  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - NUMBER
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', h: SYMBOL}
   - Fn
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
