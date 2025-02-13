@@ -76,6 +76,15 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ToggleLayer4 {
+            bindings = <&tog 4>;
+            key-positions = <46 47>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -125,6 +134,18 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            display-name = "ColemakDH";
+            bindings = <
+&kp ESCAPE     &kp Q         &kp W            &kp F            &kp P              &kp B                                         &kp UP                &kp J      &kp L               &kp U             &kp Y             &kp SEMI              &kp BACKSPACE
+&kp TAB        &HML LCTRL A  &HML LEFT_ALT R  &HML LEFT_GUI S  &HML LEFT_SHIFT T  &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp M      &HMR RIGHT_SHIFT N  &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
+&kp BACKSLASH  &kp Z         &kp X            &kp C            &kp D              &kp V                 &kp C_MUTE              &kp DOWN              &kp K      &kp H               &kp COMMA         &kp DOT           &kp FSLH              &kp MINUS
+                                              &kp LGUI         &mo 1              &mt LEFT_SHIFT ENTER                                                &kp SPACE  &lt 2 BACKSPACE     &mo 3
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
