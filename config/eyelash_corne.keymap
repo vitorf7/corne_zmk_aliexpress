@@ -41,9 +41,10 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45 46 47>;
+            require-prior-idle-ms = <150>;
         };
 
         HML: HML {
@@ -54,9 +55,10 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47 42 43 44>;
             hold-trigger-on-release;
+            require-prior-idle-ms = <150>;
         };
     };
 
@@ -116,7 +118,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1  &kp F2     &kp F3     &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6   &mt F7 C_PREVIOUS  &mt F8 C_PLAY_PAUSE  &mt F9 K_NEXT  &kp F10          &trans
+&trans  &kp F1  &kp F2     &kp F3     &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6   &mt F7 C_PREVIOUS  &mt F8 C_PLAY_PAUSE  &mt F9 C_NEXT  &kp F10          &trans
 &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F11  &mkp LCLK          &mkp MCLK            &mkp RCLK      &kp PRINTSCREEN  &trans
 &trans  &trans  &trans     &trans     &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F12  &kp SCROLLLOCK     &kp PAUSE_BREAK      &trans         &trans           &trans
                            &trans     &trans     &trans                                                                   &trans   &trans             &trans
