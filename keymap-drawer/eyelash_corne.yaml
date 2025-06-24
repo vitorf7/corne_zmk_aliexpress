@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-esc$$
@@ -43,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '-', s: _}
   - LGUI
-  - NUMBER
+  - {t: '$$mdi:keyboard-tab$$', h: '&lt 1'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: '&lt 3'}
+  - {t: '$$mdi:backspace$$', h: '&lt 2'}
   - Fn
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -92,10 +93,10 @@ layers:
   - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -116,7 +117,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -124,27 +125,27 @@ layers:
   - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: \, s: '|'}
-  - {t: '`', s: '~'}
+  - .
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - _
+  - {t: '`', s: '~'}
   - +
   - '{'
   - '}'
-  - '|'
-  - '~'
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -239,11 +240,13 @@ layers:
   - {t: /, s: '?'}
   - {t: '-', s: _}
   - LGUI
-  - NUMBER
+  - {t: '$$mdi:keyboard-tab$$', h: '&lt 1'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: '&lt 3'}
+  - {t: '$$mdi:backspace$$', h: '&lt 2'}
   - Fn
 combos:
-- p: [46, 47]
+- p: [46, 45]
   k: {t: ColemakDH, h: toggle}
+- p: [44, 45]
+  k: $$mdi:keyboard-esc$$
