@@ -99,6 +99,11 @@
             bindings = <&kp ESC>;
             key-positions = <44 45>;
         };
+
+        CapsWord {
+            bindings = <&caps_word>;
+            key-positions = <46 43>;
+        };
     };
 
     keymap {
