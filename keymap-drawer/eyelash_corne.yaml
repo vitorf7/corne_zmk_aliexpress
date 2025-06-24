@@ -250,3 +250,5 @@ combos:
   k: {t: ColemakDH, h: toggle}
 - p: [44, 45]
   k: $$mdi:keyboard-esc$$
+- p: [46, 43]
+  k: $$mdi:alpha-w-box$$
